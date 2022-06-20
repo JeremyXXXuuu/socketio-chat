@@ -41,6 +41,7 @@ io.on("connection", (socket) => {
 
     Data.shift();
     Data.shift();
+    Data = Data.join(" ");
 
     if (mesType === "/mute" && user) {
       let temp = [];
